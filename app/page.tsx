@@ -8,12 +8,31 @@ export default function Page() {
     <div className="lash-page">
       <header className="site-header">
         <div className="container">
-          <a href="https://fancylash.net/">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="https://fancylash.net/wp-content/uploads/2020/08/logo.png"
-              alt="Fancy Lash"
-            />
+          <a href="https://fancylash.net/" className="brand" aria-label="Fancy Lash home">
+            <svg
+              className="brand-mark"
+              viewBox="0 0 66 30"
+              role="img"
+              aria-hidden="true"
+            >
+              <path
+                className="brand-lid"
+                d="M4 23 Q33 6 62 23"
+                fill="none"
+              />
+              <g className="brand-lashes" fill="none">
+                <path d="M13 18 L9 8" />
+                <path d="M21 14.5 L18 5" />
+                <path d="M29 12.5 L27.5 2.5" />
+                <path d="M37 12.5 L38.5 2.5" />
+                <path d="M45 14.5 L48 5" />
+                <path d="M53 18 L57 8" />
+              </g>
+            </svg>
+            <span className="brand-word">
+              <span className="brand-fancy">Fancy</span>
+              <span className="brand-lash">Lash</span>
+            </span>
           </a>
           <div className="header-right">
             <a className="tel" href="tel:0414844666">
