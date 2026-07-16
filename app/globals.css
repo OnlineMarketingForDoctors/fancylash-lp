@@ -926,12 +926,16 @@
   background-size: cover;
   background-position: center;
   color: #fff;
+  text-align: center;
 }
 .lash-page .final .eyebrow {
   color: rgba(255, 255, 255, 0.55);
 }
 .lash-page .final .lede {
   color: rgba(255, 255, 255, 0.72);
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .lash-page .final a {
   color: #fff;
@@ -941,6 +945,8 @@
 }
 .lash-page .final .strip:before {
   background: var(--pink);
+  left: 50%;
+  transform: translateX(-50%);
 }
 .lash-page .locs {
   display: grid;
@@ -961,7 +967,7 @@
   background: #fff;
   color: var(--grey);
   font-size: 14px;
-  padding: 74px 0 46px;
+  padding: 74px 0 25px;
   box-shadow: 0 -1px 0 var(--line);
 }
 .lash-page .footer-copy {
@@ -999,10 +1005,13 @@
     padding-bottom: 74px;
   }
   .lash-page section {
-    padding: 70px 0;
+    padding: 50px 0;
+  }
+  .lash-page .curl-band {
+    padding: 50px 0;
   }
   .lash-page .hero {
-    padding: 104px 0 90px;
+    padding: 75px 0 65px;
   }
   .lash-page .curl-band-inner,
   .lash-page .cards,
