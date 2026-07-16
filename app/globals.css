@@ -210,13 +210,14 @@
 .lash-page section {
   padding: 100px 0;
   position: relative;
+  background: #ffffff;
 }
 .lash-page section > .container {
   position: relative;
   z-index: 1;
 }
 .lash-page .alt {
-  background: var(--blush-2);
+  background: #fdeef1;
 }
 .lash-page h1,
 .lash-page h2,
@@ -453,15 +454,15 @@
   color: #fff;
   overflow: hidden;
   background:
-    linear-gradient(180deg, rgba(40, 30, 31, 0.6), rgba(35, 26, 27, 0.82)),
-    radial-gradient(120% 120% at 50% -10%, #7a5b57 0%, #43322f 48%, #241b1c 100%);
+    linear-gradient(180deg, rgba(28, 20, 21, 0.66), rgba(20, 14, 15, 0.8)),
+    url("https://fancylash.net/wp-content/uploads/2022/09/TFPhoto_Fancy-Lash_Chatswood_DSCF1190.jpg");
   background-size: cover;
   background-position: center;
 }
 .lash-page .hero-inner {
   position: relative;
   z-index: 2;
-  max-width: 780px;
+  max-width: 900px;
   margin: 0 auto;
 }
 .lash-page .hero h1 {
@@ -481,6 +482,7 @@
 }
 .lash-page .hero .lede {
   color: rgba(255, 255, 255, 0.85);
+  max-width: 720px;
   margin: 22px auto 0;
 }
 .lash-page .hero-cta {
@@ -494,13 +496,20 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px 30px;
+  gap: 12px;
   font-size: 15px;
-  color: rgba(255, 255, 255, 0.78);
-  border-top: 1px solid rgba(255, 255, 255, 0.22);
-  padding-top: 20px;
-  max-width: 640px;
-  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.82);
+  max-width: 880px;
+  margin: 6px auto 0;
+}
+.lash-page .trust > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  background: rgba(255, 255, 255, 0.07);
+  padding: 12px 22px;
+  white-space: nowrap;
 }
 .lash-page .trust b {
   font-weight: 700;
@@ -908,7 +917,11 @@
 
 /* final + footer */
 .lash-page .final {
-  background: var(--ink);
+  background:
+    linear-gradient(180deg, rgba(28, 20, 21, 0.82), rgba(20, 14, 15, 0.86)),
+    url("https://fancylash.net/wp-content/uploads/2020/08/appointment-bg.jpg");
+  background-size: cover;
+  background-position: center;
   color: #fff;
 }
 .lash-page .final .eyebrow {
