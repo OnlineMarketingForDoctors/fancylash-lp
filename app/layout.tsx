@@ -24,7 +24,12 @@ export const metadata: Metadata = {
     'Korean lash lift and keratin lash lift at Fancy Lash, Bondi Junction and Chatswood. Lash lift and tint from $125, lift only from $105. Curled lashes for 6 to 8 weeks, no extensions, no damage. Book online.',
   robots: 'index, follow',
   alternates: {
-    canonical: 'https://fancylash.net/services/lash-lift/',
+    canonical: 'https://lp.fancylash.net/korean-keratin-lash-lift',
+  },
+  icons: {
+    icon: 'https://fancylash.net/wp-content/uploads/2020/09/loader.png',
+    shortcut: 'https://fancylash.net/wp-content/uploads/2020/09/loader.png',
+    apple: 'https://fancylash.net/wp-content/uploads/2020/09/loader.png',
   },
   generator: 'v0.app',
 }
