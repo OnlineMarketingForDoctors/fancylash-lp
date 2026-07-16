@@ -304,7 +304,7 @@
   gap: 20px;
 }
 .lash-page .site-header img {
-  height: 48px;
+  height: 60px;
   width: auto;
 }
 /* brand wordmark */
@@ -654,7 +654,6 @@
 }
 .lash-page .card {
   background: #fff;
-  border: 1px solid var(--line);
   padding: 0 34px 34px;
   display: flex;
   flex-direction: column;
@@ -769,13 +768,13 @@
 .lash-page .compare td {
   text-align: left;
   padding: 18px 16px;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid #ebc8ce;
   vertical-align: top;
 }
 .lash-page .compare thead th {
   font-size: 20px;
   font-weight: 700;
-  border-bottom: 2px solid var(--ink);
+  border-bottom: 2px solid #ebc8ce;
 }
 .lash-page .compare thead th:nth-child(2) {
   color: #a97f88;
@@ -794,6 +793,12 @@
   font-size: 14px;
   color: var(--grey);
   margin-top: 20px;
+}
+.lash-page #choose .compare {
+  background: rgba(255, 255, 255, 0.5);
+}
+.lash-page .note .compare {
+  background: transparent;
 }
 
 /* steps */
@@ -880,11 +885,9 @@
 /* faq */
 .lash-page .faq {
   margin-top: 40px;
-  border-top: 2px solid var(--ink);
 }
 .lash-page details {
-  border-bottom: 1px solid var(--line);
-  background: #fff;
+  border-bottom: 1px solid #ebc8ce;
 }
 .lash-page summary {
   cursor: pointer;
@@ -943,30 +946,30 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 34px;
-  margin-top: 56px;
-  border-top: 1px solid rgba(255, 255, 255, 0.25);
-  padding-top: 36px;
   font-size: 16px;
 }
 .lash-page .locs h3 {
   font-size: 32px;
-  color: #fff;
+  color: var(--ink);
   margin-bottom: 8px;
 }
 .lash-page .locs p {
-  color: rgba(255, 255, 255, 0.72);
+  color: var(--grey);
   margin: 0 0 6px;
 }
 .lash-page .site-footer {
-  background: var(--ink);
-  color: rgba(255, 255, 255, 0.5);
+  background: #fff;
+  color: var(--grey);
   font-size: 14px;
-  padding: 0 0 44px;
+  padding: 74px 0 46px;
+  box-shadow: 0 -1px 0 var(--line);
 }
-.lash-page .site-footer .container {
-  border-top: 1px solid rgba(255, 255, 255, 0.18);
-  padding-top: 24px;
+.lash-page .footer-copy {
+  border-top: 1px solid var(--line);
+  margin-top: 46px;
+  padding-top: 26px;
   text-align: center;
+  color: var(--grey);
 }
 
 /* sticky mobile bar */

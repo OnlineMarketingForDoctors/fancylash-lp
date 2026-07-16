@@ -266,7 +266,7 @@ export default function Page() {
               Book a lash lift and tint
             </a>
           </div>
-          <div>
+          <div className="note">
             <table className="compare" style={{ marginTop: 0 }}>
               <thead>
                 <tr>
@@ -640,6 +640,12 @@ export default function Page() {
               Book your lash lift
             </a>
           </div>
+        </div>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="site-footer">
+        <div className="container">
           <div className="locs">
             <div>
               <h3>Lash lift Bondi Junction</h3>
@@ -679,15 +685,12 @@ export default function Page() {
               </p>
             </div>
           </div>
+          <div className="footer-copy">
+            © {new Date().getFullYear()} Fancy Lash. Eyelash extensions, lash
+            lifts and brow treatments across Sydney.
+          </div>
         </div>
-      </section>
-
-      <div className="site-footer">
-        <div className="container">
-          © {new Date().getFullYear()} Fancy Lash. Eyelash extensions, lash
-          lifts and brow treatments across Sydney.
-        </div>
-      </div>
+      </footer>
 
       <div className="sticky-bar">
         <a
