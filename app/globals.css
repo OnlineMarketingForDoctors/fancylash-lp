@@ -982,43 +982,33 @@
   transform: translateX(-50%);
 }
 .lash-page .insta .lede {
-  margin: 0 auto 26px;
+  margin: 0 auto;
 }
 .lash-page .insta-grid {
   margin-top: 50px;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
 }
 .lash-page .insta-tile {
+  display: block;
   position: relative;
   aspect-ratio: 1 / 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   overflow: hidden;
-  background: linear-gradient(135deg, #fad9df 0%, #ebc8ce 100%);
-  color: var(--mauve);
-  transition: opacity 0.4s, transform 0.4s;
+  background: #f6e4e8;
 }
-.lash-page .insta-tile:nth-child(even) {
-  background: linear-gradient(135deg, #f6e4e8 0%, #e6b9c3 100%);
+.lash-page .insta-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
 }
-.lash-page .insta-tile svg {
-  width: 34px;
-  height: 34px;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 1.7;
-  opacity: 0.85;
+.lash-page .insta-tile:hover img {
+  transform: scale(1.05);
 }
-.lash-page .insta-tile svg .dot {
-  fill: currentColor;
-  stroke: none;
-}
-.lash-page .insta-tile:hover {
-  opacity: 0.9;
-  transform: scale(1.02);
+.lash-page .insta-follow {
+  margin-top: 40px;
 }
 
 @media screen and (max-width: 991px) {
@@ -1029,7 +1019,7 @@
     padding: 50px 0;
   }
   .lash-page .insta-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .lash-page .curl-band {
     padding: 50px 0;

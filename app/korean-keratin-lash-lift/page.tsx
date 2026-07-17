@@ -3,6 +3,29 @@ import { CurlPreview } from '@/components/curl-preview'
 const BOOK_URL =
   'https://www.fresha.com/book-now/fancy-lash-lohuxs9f/all-offer?pId=941881'
 
+const IG_URL = 'https://www.instagram.com/fancy.lash/'
+
+// Four grid images sourced from fancylash.net. Swap `img` for any
+// fancylash.net upload URLs (and `href` for the matching post link).
+const INSTA_POSTS = [
+  {
+    img: 'https://fancylash.net/wp-content/uploads/2022/09/TFPhoto_Fancy-Lash_Chatswood_DSCF1190.jpg',
+    href: IG_URL,
+  },
+  {
+    img: 'https://fancylash.net/wp-content/uploads/2020/08/appointment-bg.jpg',
+    href: IG_URL,
+  },
+  {
+    img: 'https://fancylash.net/wp-content/uploads/2022/09/TFPhoto_Fancy-Lash_Chatswood_DSCF1190.jpg',
+    href: IG_URL,
+  },
+  {
+    img: 'https://fancylash.net/wp-content/uploads/2020/08/appointment-bg.jpg',
+    href: IG_URL,
+  },
+]
+
 export default function Page() {
   return (
     <div className="lash-page">
@@ -635,48 +658,37 @@ export default function Page() {
       {/* INSTAGRAM */}
       <section className="insta" id="instagram">
         <div className="container">
-          <p className="script-eyebrow">Follow along</p>
+          <p className="script-eyebrow">Follow us</p>
           <h2 className="strip">
             On <em>Instagram</em>
           </h2>
           <p className="lede">
             Fresh lifts, tints and a little everyday inspiration from the
-            studio. Follow{' '}
-            <a
-              href="https://www.instagram.com/fancy.lash/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              @fancy.lash
-            </a>
-            .
+            studio.
           </p>
+          <div className="insta-grid">
+            {INSTA_POSTS.map((post, i) => (
+              <a
+                key={i}
+                className="insta-tile"
+                href={post.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Fancy Lash on Instagram"
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={post.img} alt="Fancy Lash on Instagram" loading="lazy" />
+              </a>
+            ))}
+          </div>
           <a
-            className="btn btn-pink"
-            href="https://www.instagram.com/fancy.lash/"
+            className="btn btn-pink insta-follow"
+            href={IG_URL}
             target="_blank"
             rel="noopener noreferrer"
           >
             Follow @fancy.lash
           </a>
-          <div className="insta-grid">
-            {Array.from({ length: 6 }).map((_, i) => (
-              <a
-                key={i}
-                className="insta-tile"
-                href="https://www.instagram.com/fancy.lash/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Fancy Lash on Instagram"
-              >
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <rect x="3" y="3" width="18" height="18" rx="5" />
-                  <circle cx="12" cy="12" r="4.2" />
-                  <circle cx="17.2" cy="6.8" r="1.15" className="dot" />
-                </svg>
-              </a>
-            ))}
-          </div>
         </div>
       </section>
 
