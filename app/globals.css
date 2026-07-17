@@ -359,15 +359,6 @@
   align-items: center;
   gap: 22px;
 }
-.lash-page .tel {
-  font-weight: 600;
-  white-space: nowrap;
-  text-decoration: none;
-  font-size: 16px;
-}
-.lash-page .tel:hover {
-  color: var(--mauve);
-}
 
 /* buttons */
 .lash-page .btn {
@@ -978,34 +969,67 @@
   color: var(--grey);
 }
 
-/* sticky mobile bar */
-.lash-page .sticky-bar {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 98;
-  display: none;
-  gap: 10px;
-  padding: 10px 12px;
-  background: #fff;
-  border-top: 1px solid var(--line);
-}
-.lash-page .sticky-bar .btn {
-  flex: 1;
-  padding: 15px 8px;
-  font-size: 13px;
-  box-shadow: none;
+/* instagram */
+.lash-page .insta {
   text-align: center;
+}
+.lash-page .insta .strip {
+  display: inline-block;
+  padding-bottom: 34px;
+}
+.lash-page .insta .strip:before {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.lash-page .insta .lede {
+  margin: 0 auto 26px;
+}
+.lash-page .insta-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+.lash-page .insta-tile {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #fad9df 0%, #ebc8ce 100%);
+  color: var(--mauve);
+  transition: opacity 0.4s, transform 0.4s;
+}
+.lash-page .insta-tile:nth-child(even) {
+  background: linear-gradient(135deg, #f6e4e8 0%, #e6b9c3 100%);
+}
+.lash-page .insta-tile svg {
+  width: 34px;
+  height: 34px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  opacity: 0.85;
+}
+.lash-page .insta-tile svg .dot {
+  fill: currentColor;
+  stroke: none;
+}
+.lash-page .insta-tile:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
 }
 
 @media screen and (max-width: 991px) {
   .lash-page {
     font-size: 17px;
-    padding-bottom: 74px;
   }
   .lash-page section {
     padding: 50px 0;
+  }
+  .lash-page .insta-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
   .lash-page .curl-band {
     padding: 50px 0;
@@ -1036,7 +1060,9 @@
     gap: 26px;
   }
   .lash-page .header-right .btn {
-    display: none;
+    padding: 12px 18px;
+    font-size: 12px;
+    letter-spacing: 1px;
   }
   .lash-page .btn {
     padding: 16px 26px;
@@ -1044,9 +1070,6 @@
   }
   .lash-page .compare td:first-child {
     width: 32%;
-  }
-  .lash-page .sticky-bar {
-    display: flex;
   }
 }
 @media (prefers-reduced-motion: reduce) {

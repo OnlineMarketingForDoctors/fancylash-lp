@@ -18,9 +18,6 @@ export default function Page() {
             />
           </a>
           <div className="header-right">
-            <a className="tel" href="tel:0414844666">
-              0414 844 666
-            </a>
             <a
               className="btn btn-pink btn-sm"
               href={BOOK_URL}
@@ -619,6 +616,66 @@ export default function Page() {
                 week and on weekends. You can book online any time, day or night.
               </p>
             </details>
+            <details>
+              <summary>Can I have a lash lift and tint while pregnant?</summary>
+              <p>
+                Yes, lash lifts and tints are generally considered safe during
+                pregnancy. However, we recommend waiting until after your first
+                trimester before having the treatment. This is a precautionary
+                recommendation, as the first 12 weeks are the most important
+                stage of pregnancy. If you have any concerns, we also advise
+                speaking with your midwife or healthcare professional before
+                booking your appointment.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      {/* INSTAGRAM */}
+      <section className="insta" id="instagram">
+        <div className="container">
+          <p className="script-eyebrow">Follow along</p>
+          <h2 className="strip">
+            On <em>Instagram</em>
+          </h2>
+          <p className="lede">
+            Fresh lifts, tints and a little everyday inspiration from the
+            studio. Follow{' '}
+            <a
+              href="https://www.instagram.com/fancy.lash/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              @fancy.lash
+            </a>
+            .
+          </p>
+          <a
+            className="btn btn-pink"
+            href="https://www.instagram.com/fancy.lash/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Follow @fancy.lash
+          </a>
+          <div className="insta-grid">
+            {Array.from({ length: 6 }).map((_, i) => (
+              <a
+                key={i}
+                className="insta-tile"
+                href="https://www.instagram.com/fancy.lash/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Fancy Lash on Instagram"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="5" />
+                  <circle cx="12" cy="12" r="4.2" />
+                  <circle cx="17.2" cy="6.8" r="1.15" className="dot" />
+                </svg>
+              </a>
+            ))}
           </div>
         </div>
       </section>
@@ -691,16 +748,6 @@ export default function Page() {
           </div>
         </div>
       </footer>
-
-      <div className="sticky-bar">
-        <a
-          className="btn btn-pink btn-full"
-          href={BOOK_URL}
-          rel="nofollow"
-        >
-          Book your lash lift online
-        </a>
-      </div>
     </div>
   )
 }
