@@ -5,24 +5,24 @@ const BOOK_URL =
 
 const IG_URL = 'https://www.instagram.com/fancy.lash/'
 
-// Four grid images sourced from fancylash.net. Swap `img` for any
-// fancylash.net upload URLs (and `href` for the matching post link).
+// Four grid images sourced from fancylash.net's Instagram feed cache,
+// each linking to its Instagram reel.
 const INSTA_POSTS = [
   {
-    img: 'https://fancylash.net/wp-content/uploads/2022/09/TFPhoto_Fancy-Lash_Chatswood_DSCF1190.jpg',
-    href: IG_URL,
+    img: 'https://fancylash.net/wp-content/uploads/sb-instagram-feed-images/748704645_18610383745058216_3433364977862633821_nlow.webp',
+    href: 'https://www.instagram.com/reel/Da2iGRZS3pg/',
   },
   {
-    img: 'https://fancylash.net/wp-content/uploads/2020/08/appointment-bg.jpg',
-    href: IG_URL,
+    img: 'https://fancylash.net/wp-content/uploads/sb-instagram-feed-images/748026103_18610042714058216_4379074719147366954_nfull.webp',
+    href: 'https://www.instagram.com/reel/DazvV2byTgK/',
   },
   {
-    img: 'https://fancylash.net/wp-content/uploads/2022/09/TFPhoto_Fancy-Lash_Chatswood_DSCF1190.jpg',
-    href: IG_URL,
+    img: 'https://fancylash.net/wp-content/uploads/sb-instagram-feed-images/744055680_18609745348058216_5488512509945658133_nfull.webp',
+    href: 'https://www.instagram.com/reel/DawxXM-to9f/',
   },
   {
-    img: 'https://fancylash.net/wp-content/uploads/2020/08/appointment-bg.jpg',
-    href: IG_URL,
+    img: 'https://fancylash.net/wp-content/uploads/sb-instagram-feed-images/743995962_18608781589058216_5205330122671270208_nlow.webp',
+    href: 'https://www.instagram.com/reel/DapLeZix-NX/',
   },
 ]
 
