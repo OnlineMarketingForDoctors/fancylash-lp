@@ -1,4 +1,5 @@
 import { CurlPreview } from '@/components/curl-preview'
+import { SiteHeader } from '@/components/site-header'
 
 const BOOK_URL =
   'https://www.fresha.com/book-now/fancy-lash-lohuxs9f/all-offer?pId=941881'
@@ -29,28 +30,7 @@ const INSTA_POSTS = [
 export default function Page() {
   return (
     <div className="lash-page">
-      <header className="site-header">
-        <div className="container">
-          <a href="https://fancylash.net/" className="brand" aria-label="Fancy Lash home">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="https://fancylash.net/wp-content/uploads/2020/08/logo.png.webp"
-              alt="Fancy Lash"
-              width={150}
-              height={54}
-            />
-          </a>
-          <div className="header-right">
-            <a
-              className="btn btn-pink btn-sm"
-              href={BOOK_URL}
-              rel="nofollow"
-            >
-              Book online
-            </a>
-          </div>
-        </div>
-      </header>
+      <SiteHeader bookUrl={BOOK_URL} />
 
       {/* HERO */}
       <section className="hero">
@@ -713,7 +693,7 @@ export default function Page() {
       </section>
 
       {/* FOOTER */}
-      <footer className="site-footer">
+      <footer className="site-footer" id="visit">
         <div className="container">
           <div className="locs">
             <div>

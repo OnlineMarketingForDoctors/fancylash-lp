@@ -162,6 +162,12 @@
   }
 }
 
+/* smooth anchor scrolling with sticky-header offset */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 96px;
+}
+
 /* ===========================================================
    Fancy Lash brand system, ported from the live theme.
    palette   #2e2e2e  #ebc8ce  #fad9df  #735853  #f4f4f4  #5d5d5d  #ccc
@@ -306,6 +312,72 @@
 .lash-page .site-header img {
   height: 60px;
   width: auto;
+}
+/* primary nav */
+.lash-page .main-nav ul {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.lash-page .main-nav a {
+  position: relative;
+  display: inline-block;
+  padding: 6px 0;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--ink);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.lash-page .main-nav a:hover {
+  color: var(--mauve);
+}
+.lash-page .main-nav a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: var(--pink);
+  transition: width 0.3s ease;
+}
+.lash-page .main-nav a:hover:after {
+  width: 100%;
+}
+.lash-page .nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.lash-page .nav-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  margin: 0 auto;
+  background: var(--ink);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.lash-page .nav-toggle[aria-expanded="true"] span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.lash-page .nav-toggle[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+}
+.lash-page .nav-toggle[aria-expanded="true"] span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
 }
 /* brand wordmark */
 .lash-page .brand {
@@ -1054,6 +1126,48 @@
     font-size: 12px;
     letter-spacing: 1px;
   }
+  .lash-page .header-right {
+    gap: 12px;
+  }
+  .lash-page .nav-toggle {
+    display: flex;
+  }
+  .lash-page .main-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-top: 1px solid var(--line);
+    box-shadow: 0 14px 22px -14px rgba(43, 32, 36, 0.4);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+  }
+  .lash-page .main-nav.open {
+    max-height: 80vh;
+  }
+  .lash-page .main-nav ul {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 6px 25px 16px;
+  }
+  .lash-page .main-nav li {
+    border-bottom: 1px solid var(--line);
+  }
+  .lash-page .main-nav li:last-child {
+    border-bottom: none;
+  }
+  .lash-page .main-nav a {
+    display: block;
+    padding: 15px 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+  .lash-page .main-nav a:after {
+    display: none;
+  }
   .lash-page .btn {
     padding: 16px 26px;
     letter-spacing: 1px;
@@ -1063,6 +1177,9 @@
   }
 }
 @media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
   .lash-page * {
     transition: none !important;
     animation: none !important;
