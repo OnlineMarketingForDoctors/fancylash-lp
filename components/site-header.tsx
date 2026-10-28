@@ -2,7 +2,9 @@
 
 import { useState } from 'react'
 
-const NAV = [
+type NavItem = { href: string; label: string }
+
+const DEFAULT_NAV: NavItem[] = [
   { href: '#choose', label: 'The Lifts' },
   { href: '#tint', label: 'Pricing' },
   { href: '#how', label: 'How It Works' },
@@ -11,7 +13,13 @@ const NAV = [
   { href: '#visit', label: 'Visit' },
 ]
 
-export function SiteHeader({ bookUrl }: { bookUrl: string }) {
+export function SiteHeader({
+  bookUrl,
+  nav = DEFAULT_NAV,
+}: {
+  bookUrl: string
+  nav?: NavItem[]
+}) {
   const [open, setOpen] = useState(false)
 
   return (
@@ -37,7 +45,7 @@ export function SiteHeader({ bookUrl }: { bookUrl: string }) {
           aria-label="Primary"
         >
           <ul>
-            {NAV.map((item) => (
+            {nav.map((item) => (
               <li key={item.href}>
                 <a href={item.href} onClick={() => setOpen(false)}>
                   {item.label}
@@ -68,3 +76,4 @@ export function SiteHeader({ bookUrl }: { bookUrl: string }) {
     </header>
   )
 }
+
