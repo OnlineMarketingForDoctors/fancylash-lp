@@ -84,7 +84,7 @@ const EXTENSIONS = [
     tag: 'Maximum density',
     name: 'Mega Volume',
     intro:
-      'The fullest, darkest set we offer — the finest lashes fanned for maximum density and drama.',
+      'The fullest, darkest set we offer, the finest lashes fanned for maximum density and drama.',
     meta: 'Full set · from 120 min · infills 2 to 3 wks',
     best: 'The boldest, show-stopping lash line.',
     ticks: [
@@ -118,7 +118,7 @@ export default function Page() {
           </h1>
           <p className="lede">
             Classic, hybrid and volume lash extensions, plus Korean and keratin
-            lash lifts and tints — in the heart of Bondi Junction, minutes from
+            lash lifts and tints, in the heart of Bondi Junction, minutes from
             Bondi Beach and across the Eastern Suburbs.
           </p>
           <div className="hero-cta">
@@ -151,8 +151,8 @@ export default function Page() {
           </h2>
           <p className="lede">
             A full set of eyelash extensions applied lash by lash to open and
-            lengthen your eyes. We map every set to your eye shape — from a soft,
-            natural finish to full volume — at our Bondi Junction studio.
+            lengthen your eyes. We map every set to your eye shape, from a soft,
+            natural finish to full volume, at our Bondi Junction studio.
           </p>
 
           <div className="cards">
@@ -199,7 +199,7 @@ export default function Page() {
           </h2>
           <p className="lede">
             A lash lift curls your own lashes from root to tip and sets the
-            shape for 6 to 8 weeks — no extensions, no infills. Add a tint and
+            shape for 6 to 8 weeks, no extensions, no infills. Add a tint and
             they read as length and darkness too, like mascara you did not put
             on.
           </p>
@@ -209,7 +209,7 @@ export default function Page() {
               <span className="tag">Cysteamine, hydration focused</span>
               <h3>Korean Lash Lift</h3>
               <p className="intro">
-                Chemical-free lifting that curls without breakage — gentle,
+                Chemical-free lifting that curls without breakage, gentle,
                 hydrating and truly transformative.
               </p>
               <p className="price">
@@ -321,7 +321,7 @@ export default function Page() {
               </tbody>
             </table>
             <p className="small-note">
-              Eyelash extension sets and infills are priced per set — see live
+              Eyelash extension sets and infills are priced per set, see live
               pricing and availability when you book online.
             </p>
           </div>
@@ -338,7 +338,7 @@ export default function Page() {
           <p className="lede">
             You might know it as a lash perm, an eyelash lift or a lash curl.
             Whatever you call it, the appointment is five quiet steps with your
-            eyes closed the whole time — most clients tell us it is the closest
+            eyes closed the whole time, most clients tell us it is the closest
             thing to a nap they get all week.
           </p>
           <ol className="steps">
@@ -403,7 +403,7 @@ export default function Page() {
                 for comfortable, lasting wear.
               </li>
               <li>
-                <b>Custom lash mapping</b> designed around your eye shape — never
+                <b>Custom lash mapping</b> designed around your eye shape, never
                 a cookie-cutter set.
               </li>
               <li>
@@ -456,7 +456,7 @@ export default function Page() {
             </details>
             <details>
               <summary>
-                Classic, hybrid or volume — which extensions should I choose?
+                Classic, hybrid or volume - which extensions should I choose?
               </summary>
               <p>
                 Classic adds one extension per lash for a natural, mascara-like
@@ -476,10 +476,10 @@ export default function Page() {
               </p>
             </details>
             <details>
-              <summary>Lash lift or extensions — what is the difference?</summary>
+              <summary>Lash lift or extensions - what is the difference?</summary>
               <p>
                 Extensions add length and volume with individual lashes and need
-                infills to stay full. A lash lift adds nothing — it curls and
+                infills to stay full. A lash lift adds nothing, it curls and
                 lifts your own lashes for 6 to 8 weeks with no infills. If you
                 love low maintenance and your natural lashes, go for a lift. If
                 you want length and drama, go for extensions.
@@ -490,7 +490,7 @@ export default function Page() {
               <p>
                 A Korean lash lift is from $110 and a keratin lash lift is from
                 $105, with a tint adding $20. Eyelash extension sets and infills
-                are priced per set — the live price and availability show when
+                are priced per set, the live price and availability show when
                 you book online.
               </p>
             </details>
@@ -507,7 +507,7 @@ export default function Page() {
               <p>
                 With a lift, yes after the first 24 to 48 hours, though most
                 people stop bothering. With extensions we recommend skipping
-                mascara — the set already gives you the look, and oil-based or
+                mascara, the set already gives you the look, and oil-based or
                 waterproof formulas shorten how long they last.
               </p>
             </details>
@@ -524,7 +524,7 @@ export default function Page() {
             <details>
               <summary>Where are you and do I need to book ahead?</summary>
               <p>
-                We are at Shop 3, 4-12 Waverley Street, Bondi Junction — a short
+                We are at Shop 3, 4-12 Waverley Street, Bondi Junction, a short
                 walk from Westfield and the station, and easy to reach from Bondi
                 Beach and across the Eastern Suburbs. Booking ahead is strongly
                 recommended, as appointments fill early in the week and on
