@@ -22,14 +22,14 @@ const NOTES = {
     <>
       <b>Korean lift.</b> A soft, flexible curl held root to tip, using flat
       silicone shields and a hydrating cysteamine formula. Built for thick,
-      straight or stubborn lashes that never hold a curl. From $110.
+      straight or stubborn lashes that never hold a curl. From $115.
     </>
   ),
   keratin: (
     <>
       <b>Keratin lift.</b> A gentle, conditioning curl that strengthens as it
       lifts, finished with a keratin serum. Built for thin, brittle or damaged
-      lashes, and for the softest natural look. From $105.
+      lashes, and for the softest natural look. From $115.
     </>
   ),
 }
