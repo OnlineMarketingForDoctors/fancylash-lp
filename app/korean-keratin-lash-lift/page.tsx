@@ -42,8 +42,8 @@ export default function Page() {
           </h1>
           <p className="lede">
             A Korean or keratin lash lift takes your own lashes, curls them from
-            root to tip and sets the shape for 6 to 8 weeks. Lift from $105, or
-            lift and tint from $125.
+            root to tip and sets the shape for 6 to 8 weeks. Lift from $115, or
+            lift and tint from $135.
           </p>
           <div className="hero-cta">
             <a className="btn btn-pink" href={BOOK_URL} rel="nofollow">
@@ -107,7 +107,7 @@ export default function Page() {
                 transformative.
               </p>
               <p className="price">
-                from $110 <small>/ with tint from $130</small>
+                from $115 <small>/ with tint from $135</small>
               </p>
               <p className="price-alt">45 to 60 min · lasts 6 to 8 weeks</p>
               <div className="best">
@@ -149,7 +149,7 @@ export default function Page() {
                 lash while it sets the lift.
               </p>
               <p className="price">
-                from $105 <small>/ with tint from $125</small>
+                from $115 <small>/ with tint from $135</small>
               </p>
               <p className="price-alt">45 to 60 min · lasts 6 to 8 weeks</p>
               <div className="best">
@@ -194,8 +194,8 @@ export default function Page() {
             <tbody>
               <tr>
                 <td>Price</td>
-                <td>From $110, with tint $130</td>
-                <td>From $105, with tint $125</td>
+                <td>From $115, with tint $135</td>
+                <td>From $115, with tint $135</td>
               </tr>
               <tr>
                 <td>Suits</td>
@@ -293,7 +293,7 @@ export default function Page() {
                       45 to 60 min
                     </span>
                   </td>
-                  <td style={{ textAlign: 'right', fontWeight: 700 }}>$110</td>
+                  <td style={{ textAlign: 'right', fontWeight: 700 }}>$115</td>
                 </tr>
                 <tr>
                   <td
@@ -311,7 +311,7 @@ export default function Page() {
                       most booked
                     </span>
                   </td>
-                  <td style={{ textAlign: 'right', fontWeight: 700 }}>$130</td>
+                  <td style={{ textAlign: 'right', fontWeight: 700 }}>$135</td>
                 </tr>
                 <tr>
                   <td
@@ -329,7 +329,7 @@ export default function Page() {
                       45 to 60 min
                     </span>
                   </td>
-                  <td style={{ textAlign: 'right', fontWeight: 700 }}>$105</td>
+                  <td style={{ textAlign: 'right', fontWeight: 700 }}>$115</td>
                 </tr>
                 <tr>
                   <td
@@ -347,7 +347,7 @@ export default function Page() {
                       10 extra minutes
                     </span>
                   </td>
-                  <td style={{ textAlign: 'right', fontWeight: 700 }}>$125</td>
+                  <td style={{ textAlign: 'right', fontWeight: 700 }}>$135</td>
                 </tr>
               </tbody>
             </table>
@@ -529,10 +529,9 @@ export default function Page() {
             <details>
               <summary>How much does a lash lift cost?</summary>
               <p>
-                A Korean lash lift is from $110 and a keratin lash lift is from
-                $105. Add a tint and it is $130 or $125. There is nothing to pay
-                after that, because a lift has no infills. Both salons charge the
-                same.
+                The Korean and keratin lash lift are both from $115, and with a
+                tint it is $135. There is nothing to pay after that, because a
+                lift has no infills. Both salons charge the same.
               </p>
             </details>
             <details>
@@ -680,9 +679,9 @@ export default function Page() {
             Wake up with the <em>curl</em>
           </h2>
           <p className="lede">
-            Korean lift from $110. Keratin lift from $105. Add a tint for $20.
-            Six to eight weeks of lashes you do not have to think about, at
-            either of our Sydney salons.
+            Korean and keratin lifts from $115. Add a tint for $20. Six to
+            eight weeks of lashes you do not have to think about, at either of
+            our Sydney salons.
           </p>
           <div className="hero-cta">
             <a className="btn btn-pink" href={BOOK_URL} rel="nofollow">

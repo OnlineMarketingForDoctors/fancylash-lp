@@ -213,7 +213,7 @@ export default function Page() {
                 hydrating and truly transformative.
               </p>
               <p className="price">
-                from $110 <small>/ with tint from $130</small>
+                from $115 <small>/ with tint from $135</small>
               </p>
               <p className="price-alt">45 to 60 min · lasts 6 to 8 weeks</p>
               <div className="best">
@@ -233,7 +233,7 @@ export default function Page() {
                 lash while it sets the lift.
               </p>
               <p className="price">
-                from $105 <small>/ with tint from $125</small>
+                from $115 <small>/ with tint from $135</small>
               </p>
               <p className="price-alt">45 to 60 min · lasts 6 to 8 weeks</p>
               <div className="best">
@@ -292,7 +292,7 @@ export default function Page() {
                     <br />
                     <span style={priceSub}>45 to 60 min</span>
                   </td>
-                  <td style={priceAmt}>$110</td>
+                  <td style={priceAmt}>$115</td>
                 </tr>
                 <tr>
                   <td style={priceTd}>
@@ -300,7 +300,7 @@ export default function Page() {
                     <br />
                     <span style={priceSub}>most booked</span>
                   </td>
-                  <td style={priceAmt}>$130</td>
+                  <td style={priceAmt}>$135</td>
                 </tr>
                 <tr>
                   <td style={priceTd}>
@@ -308,7 +308,7 @@ export default function Page() {
                     <br />
                     <span style={priceSub}>45 to 60 min</span>
                   </td>
-                  <td style={priceAmt}>$105</td>
+                  <td style={priceAmt}>$115</td>
                 </tr>
                 <tr>
                   <td style={priceTd}>
@@ -316,7 +316,7 @@ export default function Page() {
                     <br />
                     <span style={priceSub}>10 extra minutes</span>
                   </td>
-                  <td style={priceAmt}>$125</td>
+                  <td style={priceAmt}>$135</td>
                 </tr>
               </tbody>
             </table>
@@ -488,10 +488,10 @@ export default function Page() {
             <details>
               <summary>How much do lashes cost in Bondi Junction?</summary>
               <p>
-                A Korean lash lift is from $110 and a keratin lash lift is from
-                $105, with a tint adding $20. Eyelash extension sets and infills
-                are priced per set, the live price and availability show when
-                you book online.
+                The Korean and keratin lash lift are both from $115, with a
+                tint adding $20 to make it $135. Eyelash extension sets and
+                infills are priced per set, the live price and availability show
+                when you book online.
               </p>
             </details>
             <details>
